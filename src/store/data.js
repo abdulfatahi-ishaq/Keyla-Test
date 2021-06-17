@@ -1,5 +1,5 @@
 import Thor from '../assets/thor.jpg';
-import Endgame from '../assets/endgame.png';
+import Endgame from '../assets/endgame.jpg';
 import Hancock from '../assets/hancock.jpg';
 import Ironman from '../assets/ironman.jpg';
 import Panther from '../assets/panther.jpg';
