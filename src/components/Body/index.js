@@ -27,7 +27,7 @@ const Main = () => {
         <MainWrapper>
         {movies.map((item)=>{return(
           <VideosCard key={item.key}>
-          <Thumbnail src={item.thumbnail} />
+          <Thumbnail preload="metadata" type="video/mp4" controls><source src={item.thumbnail + "#t=0.1"}/></Thumbnail>
             <VideoTitle>
               <p>{item.text}</p>
             </VideoTitle>

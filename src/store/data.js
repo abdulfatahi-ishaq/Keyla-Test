@@ -1,11 +1,10 @@
-import Thor from '../assets/thor.jpg';
-import Endgame from '../assets/endgame.jpg';
-import Hancock from '../assets/hancock.jpg';
-import Ironman from '../assets/ironman.jpg';
-import Panther from '../assets/panther.jpg';
-import Ragnarok from '../assets/ragnarok.jpg';
-import Superman from '../assets/superman.jpg';
-import Hulk from '../assets/hulk.jpg';
+import Movie1 from '../assets/movie1.mp4';
+import Movie2 from '../assets/movie2.mp4';
+import Movie3 from '../assets/movie3.mp4';
+import Movie4 from '../assets/movie4.mp4';
+import Movie5 from '../assets/movie5.mp4';
+import Movie6 from '../assets/movie6.mp4';
+import Movie7 from '../assets/movie7.mp4';
 
 export const categories = [
     {key:"1", text:"Music"},
@@ -21,13 +20,11 @@ export const categories = [
 ]
 
 export const movies = [
-    {key:"1", text:"Thor 2011", thumbnail:Thor},
-    {key:"2", text:"Endgame - Classic Movie", thumbnail:Endgame},
-    {key:"3", text:"Hancock - 2018", thumbnail:Hancock},
-    {key:"4", text:"Ironman - The Return", thumbnail:Ironman},
-    {key:"5", text:"Panther - The Black Panther Reloaded", thumbnail:Panther},
-    {key:"6", text:"Thor Ragnarok - 2017", thumbnail:Ragnarok},
-    {key:"7", text:"Superman: The Last Son of Krypton", thumbnail:Superman},
-    {key:"8", text:"The Incredible Hulk", thumbnail:Hulk},
-
+    {key:"1", text:"Thor 2011", thumbnail:Movie1},
+    {key:"2", text:"Endgame - Classic Movie", thumbnail:Movie2},
+    {key:"3", text:"Hancock - 2018", thumbnail:Movie3},
+    {key:"4", text:"Thor 2011", thumbnail:Movie4},
+    {key:"5", text:"Endgame - Classic Movie", thumbnail:Movie5},
+    {key:"6", text:"Hancock - 2018", thumbnail:Movie6},
+    {key:"7", text:"Hancock - 2018", thumbnail:Movie7},
 ]

@@ -95,7 +95,7 @@ export const VideosCard = styled.div`
   }
 `;
 
-export const Thumbnail = styled.img`
+export const Thumbnail = styled.video`
   width: 100%;
   height: 70%;
   object-fit: stretch;
