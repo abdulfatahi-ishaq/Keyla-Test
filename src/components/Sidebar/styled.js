@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
 export const SidebarWrapper = styled.div`
-position:relative;
+position:fixed;
+left: 0;
+top: 0;
 height:100vh;
 width:220px;
 background-color:#294c56;
