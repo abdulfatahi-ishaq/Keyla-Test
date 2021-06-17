@@ -8,6 +8,10 @@ top: 0;
 height:100vh;
 width:220px;
 background-color:#294c56;
+
+@media screen and (max-width:580px){
+    display:none;
+}
 `;
 
 export const SidebarLogoContainer = styled.div`

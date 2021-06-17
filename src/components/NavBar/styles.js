@@ -9,6 +9,11 @@ export const Nav = styled.nav`
   height: 80px;
   width: calc(100vw - 220px);
   z-index: 10;
+
+  @media screen and (max-width:580px){
+    ${'' /* left:10px; */}
+    width:100vw;
+}
 `;
 
 export const NavContainer = styled.div`
@@ -21,12 +26,22 @@ export const NavContainer = styled.div`
   @media screen and (max-width:1000px){
     margin: 25px 10px auto;
   }
+
+  @media screen and (max-width:580px){
+    left:20px;
+    width:100vw;
+    }
+}
 `;
 
 export const SearchBarContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  @media screen and (max-width:580px){
+    justify-content: space-between;
+    }
 `;
 
 export const SearchBar = styled.input`
@@ -48,9 +63,6 @@ export const UserIcons = styled.div`
   justify-content: flex-end;
   align-items: center;
 
-  @media screen and (max-width:600px){
-    display:none;
-  }
 `;
 
 export const Notifications = styled(FaBell)`

@@ -6,6 +6,10 @@ export const BodyWrapper = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
+  @media screen and (max-width:580px){
+    left:0;
+    width:100vw;
+}
 `;
 
 export const Carousel = styled.div`
