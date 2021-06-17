@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BodyWrapper = styled.div`
   width: calc(100vw - 220px);
-  ${"" /* overflow-y:scroll; */}
+  margin-top:80px;
   &::-webkit-scrollbar {
     display: none;
   }

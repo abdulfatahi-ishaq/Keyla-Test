@@ -1,19 +1,22 @@
 import styled from "styled-components";
-import { FaSearch, FaBell} from "react-icons/fa";
+import { FaSearch, FaBell } from "react-icons/fa";
 
 export const Nav = styled.nav`
-  display:flex;
+  display: flex;
   bottom: 0;
   left: 0;
   background-color: #294c56;
   height: 80px;
   width: calc(100vw - 220px);
   z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 220px;
 
-  @media screen and (max-width:580px){
-    ${'' /* left:10px; */}
+  @media screen and (max-width: 580px) {
     width:100vw;
-}
+    left: 0;
+  }
 `;
 
 export const NavContainer = styled.div`
@@ -39,9 +42,9 @@ export const SearchBarContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
 
-  @media screen and (max-width:580px){
+  @media screen and (max-width: 580px) {
     justify-content: space-between;
-    }
+  }
 `;
 
 export const SearchBar = styled.input`
@@ -62,18 +65,17 @@ export const UserIcons = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
 `;
 
 export const Notifications = styled(FaBell)`
-color: #fff;
+  color: #fff;
   font-size: 20px;
   font-weight: normal;
   padding-right: 20px;
 `;
 
 export const Avatar = styled.img`
-border-radius:50px;
-height:30px;
-width:30px;
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
 `;
