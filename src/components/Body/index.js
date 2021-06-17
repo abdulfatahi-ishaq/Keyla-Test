@@ -1,6 +1,6 @@
 import React from "react";
 import { categories, movies } from "../../store/data";
-import {FaClock, FaTrash,FaEdit} from 'react-icons/fa';
+import { Thumbnail, VideoTitle } from "./styles";
 import {
   Carousel,
   ActiveCard,
@@ -9,10 +9,7 @@ import {
   MainContainer,
   VideosCard,
   BodyWrapper,
-  Thumbnail,
-  VideoTitle,
-  ActionBtn,
-} from "./styles";
+} from "../Manage/styles";
 
 const Main = () => {
   return (
@@ -25,19 +22,18 @@ const Main = () => {
       </Carousel>
       <MainContainer>
         <MainWrapper>
-        {movies.map((item)=>{return(
-          <VideosCard key={item.key}>
-          <Thumbnail preload="metadata" type="video/mp4" controls><source src={item.thumbnail + "#t=0.1"}/></Thumbnail>
-            <VideoTitle>
-              <p>{item.text}</p>
-            </VideoTitle>
-            <ActionBtn>
-              <button style={{color:"black"}}>Watch <span><FaClock/></span></button>
-              <button style={{color:"green"}}>Update <span><FaEdit/></span></button>
-              <button style={{color:"red"}}>Delete<span><FaTrash/></span></button>
-            </ActionBtn>
-          </VideosCard>
-        )})}
+          {movies.map((item) => {
+            return (
+              <VideosCard key={item.key}>
+                <Thumbnail preload="metadata" type="video/mp4" controls>
+                  <source src={item.thumbnail + "#t=0.1"} />
+                </Thumbnail>
+                <VideoTitle>
+                  <p>{item.text}</p>
+                </VideoTitle>
+              </VideosCard>
+            );
+          })}
         </MainWrapper>
       </MainContainer>
     </BodyWrapper>

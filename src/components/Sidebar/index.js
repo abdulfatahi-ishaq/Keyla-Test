@@ -12,8 +12,7 @@ import {
 } from "./styled";
 import {
   FaHome,
-  FaCompass,
-  FaHistory,
+  FaTasks,
   FaVideo,
   FaUpload,
   FaSignOutAlt,
@@ -33,16 +32,10 @@ const Sidebar = () => {
             <span>Home</span>
           </TabText>
         </Tabs>
-        <Tabs>
-          <FaCompass />
+        <Tabs to="manage">
+          <FaTasks/>
           <TabText>
-            <span>Explore</span>
-          </TabText>
-        </Tabs>
-        <Tabs>
-          <FaHistory />
-          <TabText>
-            <span>History</span>
+            <span>Manage</span>
           </TabText>
         </Tabs>
         <Tabs>

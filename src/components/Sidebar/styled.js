@@ -55,7 +55,7 @@ padding:10px 10px;
     box-shadow: 1 1px 3px rgba(0,0,0,0.2);
     transition:all 0.2s ease-in-out;
     border-radius:10px;
-    font-weight:900;
+    font-weight:bolder;
 }
 `;
 
@@ -73,6 +73,7 @@ text-decoration:none;
     color:#000000;
     box-shadow: 1 1px 3px rgba(0,0,0,0.2);
     transition:all 0.2s ease-in-out;
+    font-weight:bolder;
 }
 
 &::selection{
