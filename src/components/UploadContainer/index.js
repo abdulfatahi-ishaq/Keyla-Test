@@ -12,12 +12,13 @@ import { ButtonWrapper } from "../Button";
 import UploadVideoForm from "./uploadform";
 
 const UploadPage = () => {
-  const [fileSelected, setFileSelected] = React.useState(true);
+  const [fileSelected, setFileSelected] = React.useState({});
 
-//   const uploadVideo = (files) => {
-//     const formData = new FormData();
-//     formData.append('video')
-//   };
+  // const uploadVideo = (files) => {
+  //   const formData = new FormData();
+  //   formData.append('video')
+  // };
+
   return (
     <>
       <UploadWrapper>
@@ -37,8 +38,8 @@ const UploadPage = () => {
                 type="file"
                 id="uploadInput"
                 accept="video/mp4"
+                onChange={(e)=>{setFileSelected(e.target.files)}}
                 style={{ display: "none" }}
-                // onChange={(e) => uploadVideo(e.target.files)}
               />
               <ButtonWrapper onClick={()=>setFileSelected(true)}>SELECT FILE</ButtonWrapper>
             </UploadBody>

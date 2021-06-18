@@ -84,7 +84,7 @@ export const MainWrapper = styled.div`
 export const VideosCard = styled.div`
   background-color: #fff;
   height:250px;
-  border:1px solid silver;
+  ${'' /* border:1px solid silver; */}
   box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   transition: all 0.2s ease-in-out;
 
@@ -93,6 +93,11 @@ export const VideosCard = styled.div`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
+`;
+export const ThumbnailSkeleton = styled.div`
+  width: 100%;
+  height: 80%;
+  object-fit: stretch;
 `;
 
 export const Thumbnail = styled.video`

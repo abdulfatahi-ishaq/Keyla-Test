@@ -5325,6 +5325,11 @@
     "loader-utils" "^2.0.0"
     "schema-utils" "^3.0.0"
 
+"filereader@^0.10.3":
+  "integrity" "sha1-x0fUos2PYeVBinwH/hJXpD8KzbE="
+  "resolved" "https://registry.npmjs.org/filereader/-/filereader-0.10.3.tgz"
+  "version" "0.10.3"
+
 "filesize@6.1.0":
   "integrity" "sha512-LpCHtPQ3sFx67z+uh2HnSyWSLLu5Jxo21795uRDuar/EOuYWXib5EmPaGIBuSnRqH2IODiKA2k5re/K9OnN/Yg=="
   "resolved" "https://registry.npmjs.org/filesize/-/filesize-6.1.0.tgz"

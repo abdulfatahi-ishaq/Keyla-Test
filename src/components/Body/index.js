@@ -10,11 +10,14 @@ import {
   VideosCard,
   BodyWrapper,
 } from "../Manage/styles";
-import Skeleton from 'react-loading-skeleton';
 import useFetchvideos from "../../Functions/apiFunctions";
-
+import SkeletonCard from "../Skeleton/home";
 const Main = () => {
-  const { videos, loading, error } = useFetchvideos();
+  const { videos, loading,error} = useFetchvideos();
+
+  // React.useEffect(() => {
+  //   setMovies(videos);
+  // }, [videos]);
   return (
     <BodyWrapper>
       <Carousel>
@@ -25,11 +28,12 @@ const Main = () => {
       </Carousel>
       <MainContainer>
         <MainWrapper>
-          {loading && <Skeleton count={5} duration={3}/>}
-          {error && <h1>Error! Try refreshing...</h1>}
-          {videos.map((item) => {
+          {loading && <SkeletonCard/>}
+          {error && <SkeletonCard/>}
+          {videos === [] ? <SkeletonCard/> 
+          : videos.map((item) => {
             return (
-              <VideosCard key={item._id}>
+              <VideosCard key={item.publicId}>
                 <Thumbnail preload="metadata" type="video/mp4" controls>
                   <source src={item.videoUrl + "#t=0.1"} />
                 </Thumbnail>
