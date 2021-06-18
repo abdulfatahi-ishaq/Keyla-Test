@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ButtonWrapper = styled.div`
+export const ButtonWrapper = styled.button`
 display:flex;
 margin:15px auto;
 width:100px;
